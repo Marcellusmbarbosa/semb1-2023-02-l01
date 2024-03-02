@@ -159,11 +159,12 @@ As interrupções são encontradas na tabela de Vetores de interrupção do manu
 
 | Posição  | Prioridade  | Tipo de Prioridade  | Acrônimo  | Descrição  | Endereço  |
 | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
-|   | -  | Fixada  | NMI  | Non maskable interrupt  | 0x0000 0008  |
-|   |  -3 | Fixada  | HardFault  | All class of fault  | 0x0000 000C  |
-|   | -2  | Setável  | MemManage  | Memory management  | 0x0000 0010  |
-|   | 0  | Setável  | BusFault  | Pre-fetch fault, memory access fault  | 0x0000 0014  |
-|   | 1  | Setável  |   |   |   |
+|   | -  | -  | -  | Reservado  | 0x0000 0000  |
+|   | - 3 | Fixada  | Reset | Reset  | 0x0000 0004  |
+|   |  -2 | Fixada  | NMI  | Non maskable interrupt | 0x0000 0008  |
+|   | -1 | Fixada  | HardFault | All class of fault | 0x0000 000C |
+|   | 0  | Setável  | MemManage | Memory management  | 0x0000 0010  |
+|   | 1  | Setável  | BusFault  | Pre-fetch fault, memory access fault  | 0x0000 0014  |
 |   | 2  | Setável  | UsageFault  | Undefined instruction or illegal state  | 0x0000 0018  |
 |   | -  | -  | -  | Reservado  | 0x0000 001C |
 |   | 3  | Setável  | SVCall  | System Service call via SWI instruction  | 0x0000 002C  |
